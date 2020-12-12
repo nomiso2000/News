@@ -1,0 +1,65 @@
+/* NAV ------------------------------------------------------------*/
+.navigation__list {
+  width: 354px;
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.navigation__list-item {
+  display: block;
+  float: right;
+  transition: all 200ms linear;
+}
+.navigation__list-item-link {
+  font-size: 22px;
+  text-decoration: none;
+  margin-left: 15px;
+  padding-right: 15px;
+  border-right: 1px solid #665d4e;
+  color: #665d4e;
+  transition: all 200ms linear;
+  text-transform: uppercase;
+}
+.navigation__sublist {
+  display: none;
+  visibility: hidden;
+  padding: 10px 5px;
+  background: white;
+  border: 1px solid #665d4e;
+  position: absolute;
+  left: -14px;
+  transition: all 200ms linear;
+}
+.navigation__sublist-item {
+  display: block;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #665d4e;
+  border: none;
+  font-family: Georgia;
+  text-transform: uppercase;
+}
+.navigation__sublist-item::after {
+  display: block;
+  content: "";
+  background-color: #050505;
+  width: 76px;
+  height: 2px;
+  margin: 8px auto -6px;
+}
+.navigation__list-item:hover > .navigation__sublist {
+  display: block;
+  visibility: visible;
+}
+.navigation__list-item-link:hover {
+  color: #c98b18;
+}
+
+.navigation__sublist-item .navigation__list-item-link {
+  border: none;
+  font-size: 14px;
+}

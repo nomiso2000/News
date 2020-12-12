@@ -1,0 +1,80 @@
+/* HEADER ------------------------------------------------------------*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 212px;
+  width: 100%;
+  background: url(../../images/spring/top-bg.png) no-repeat;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-size: contain;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  margin-right: 20px;
+}
+
+.logo-txt {
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+  font-size: 62px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 12px;
+}
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* BURGER====================================== */
+.burger-box {
+  display: none;
+  height: 60px;
+  width: 60px;
+}
+.burger-box:active .navigation {
+  display: block;
+}
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+

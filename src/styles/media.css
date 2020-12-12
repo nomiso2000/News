@@ -1,0 +1,159 @@
+@media (max-width: 1260px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+@media (max-width: 968px) {
+  .wrapper {
+    width: 86%;
+  }
+  .footer-col {
+    width: 190px;
+  }
+}
+@media (max-width: 840px) {
+  .articleList {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+  .logo-txt {
+    font-size: 54px;
+  }
+}
+@media (max-width: 768px) {
+  .logo-txt {
+    margin-top: 20px;
+    font-size: 46px;
+  }
+  .logo-wrapper {
+    flex-direction: column;
+  }
+  .slider {
+    display: none;
+  }
+  .scrollTopButton {
+    display: none;
+  }
+  .articleText {
+    display: none;
+  }
+  .articleSectionInfo::after {
+    display: none;
+  }
+  .tagsContainer {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .articleTag {
+    padding: 4px 2px;
+  }
+  .btn-wrapper {
+    width: 100%;
+  }
+  .articleButton {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-col {
+    width: 178px;
+  }
+  .newsListTitle {
+    font-size: 24px;
+    width: 480px;
+  }
+  .articleList {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .navigation__list {
+    width: 310px;
+  }
+  .navigation__list-item-link {
+    font-size: 18px;
+  }
+}
+@media (max-width: 550px) {
+  .header {
+    height: 160px;
+  }
+  .header-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 150px;
+    padding: 0;
+    align-items: start;
+  }
+  .logo-txt {
+    display: none;
+  }
+  .logo {
+    margin: 0;
+  }
+  .search-form {
+    display: none;
+  }
+  .navigation__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .navigation__list-item-link {
+    border-right: none;
+  }
+  .burger-box {
+    display: block;
+    margin-right: 12px;
+  }
+  .newsListTitle {
+    display: none;
+  }
+  .section-list-wrapper {
+    margin: 0;
+  }
+  .section-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section-list-item {
+    height: 34px;
+    width: 50%;
+  }
+  .articleList {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  .tagsContainer {
+    display: none;
+  }
+  .pagination-container {
+    width: 100%;
+  }
+  .pagination-btn {
+    width: 80px;
+  }
+  .footer {
+    padding-top: 20px;
+  }
+
+  .footer-cols {
+    flex-wrap: wrap;
+  }
+  .footer-col {
+    width: 136px;
+    min-height: 144px;
+  }
+  .footer-bottom {
+    width: 190px;
+    padding: 0 0 10px;
+  }
+  .navigation {
+    display: none;
+    visibility: hidden;
+    width: 84px;
+  }
+  .visible {
+    visibility: visible;
+    display: block;
+  }
+}

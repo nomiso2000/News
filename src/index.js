@@ -1,0 +1,26 @@
+import "./js/app";
+import "./js/slider";
+import "./js/createorSectionList";
+import "./js/fetchSelectedSection";
+// import "./js/addToStorage";
+import "./js/activeBurger";
+import "./js/pagination";
+// import "./js/openPersistedArticles";
+
+import "./styles/normalize.css";
+import "./styles/animation.css";
+import "./styles/components/general.css";
+import "./styles/components/header.css";
+import "./styles/components/navigation.css";
+import "./styles/components/searchForm.css";
+import "./styles/components/fonts.css";
+import "./styles/components/slider.css";
+import "./styles/components/articleList.css";
+import "./styles/components/footer.css";
+import "./styles/components/selector.css";
+import "./styles/components/sectionList.css";
+import "./styles/components/pagination.css";
+import "./styles/spin.css";
+import "./styles/arrowScrollToTop.css";
+import "./styles/components/savedArticlesBox.css";
+import "./styles/media.css";

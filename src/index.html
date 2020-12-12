@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>News</title>
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="logo-wrapper bounce">
+          <a href="#"><img src="images/logo.png" class="logo "/></a>
+          <span class="logo-txt">newspallet</span>
+        </div>
+        <div class="header-wrapper">
+          <form class="search-form">
+            <input
+              type="text"
+              name="keyword"
+              class="search-input"
+              placeholder="Search..."
+            />
+            <button type="submit" class="submit-btn"></button>
+          </form>
+          <!-- navigation -->
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__list-item ">
+                <a class="navigation__list-item-link" href="#">contact</a>
+              </li>
+              <li class="navigation__list-item ">
+                <a class="navigation__list-item-link" href="#">blog</a>
+              </li>
+              <li class="navigation__list-item ">
+                <a
+                  class="navigation__list-item-link navigation__list-item-link--seeLate"
+                  href="#"
+                  >see latest</a
+                >
+              </li>
+              <li class="navigation__list-item ">
+                <a class="navigation__list-item-link" href="#">go home</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="burger-box">
+            <svg
+              class="ham hamRotate ham1"
+              viewBox="0 0 100 100"
+              width="80"
+              onclick="this.classList.toggle('active')"
+            >
+              <path
+                class="line top"
+                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
+              />
+              <path class="line middle" d="m 30,50 h 40" />
+              <path
+                class="line bottom"
+                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+              />
+            </svg>
+          </div>
+        </div>
+      </header>
+      <!-- MAIN -->
+      <main class="main">
+        <!-- slideshow -->
+        <div class="slider">
+          <div class="siema slide-frame">
+            <img src="./slides/01.jpg" />
+            <img src="./slides/02.jpg" />
+            <img src="./slides/03.jpg" />
+          </div>
+          <button class="sliderBtn prev"></button>
+          <button class="sliderBtn next"></button>
+        </div>
+        <div class="section-list-wrapper">
+          <ul class="section-list"></ul>
+        </div>
+        <!-- ENDS slideshow -->
+        <h2 class="newsListTitle">The latest news from around the world</h2>
+        <div class="spinner-wrapper"><div class="spinnerBox"></div></div>
+        <!-- arlicles -->
+        <div class="articleList-container">
+          <ul class="articleList"></ul>
+          <!-- PaginationBox -->
+          <div class="pagination-container">
+            <button class="pagination-btn prevButton">Prev</button>
+            <button class="pagination-btn pagination-btn-num">
+              <span class="pagination-txt">HOME</span>
+              <span class="arrow-left">&#8249;</span>
+              <span class="pagination-number">1</span>
+            </button>
+            <button class="pagination-btn nextButton">Next</button>
+          </div>
+        </div>
+
+        <!-- ENDS articles -->
+        <!-- Saved Art -->
+        <div class="savedArticles-container">
+          <ul class="savedArticles-list"></ul>
+        </div>
+      </main>
+      <!-- ENDS MAIN -->
+    </div>
+    <!-- ENDS WRAPPER -->
+    <button class="scrollTopButton"></button>
+    <!-- FOOTER -->
+    <div class="footer">
+      <ul class="follow">
+        <li class="followItem ">
+          <span class="footerLinksInfo">Follow us: </span>
+        </li>
+        <li class="followItem">
+          <a href="#"><img src="images/twitter.png" alt=""/></a>
+        </li>
+        <li class="followItem">
+          <a href="#"><img src="images/facebook.png" alt=""/></a>
+        </li>
+        <li class="followItem">
+          <a href="#"><img src="images/linkedln.png" alt=""/></a>
+        </li>
+        <li class="followItem">
+          <a href="#"><img src="images/rss.png" alt=""/></a>
+        </li>
+      </ul>
+      <div class="footer-wrapper">
+        <div class="footer-cols">
+          <div class="footer-col">
+            <ul class="footer-col-list">
+              <li class="footer-col-list-item ">
+                <a class="followLinkTop footer-col-list-item-link" href="#"
+                  >Skins</a
+                >
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Spring</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Summer</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Autumn</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Winter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul class="footer-col-list">
+              <li class="footer-col-list-item ">
+                <a class=" followLinkTop footer-col-list-item-link" href="#"
+                  >Gallery</a
+                >
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Spring</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Summer</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Autumn</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Winter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul class="footer-col-list">
+              <li class="footer-col-list-item ">
+                <a class="followLinkTop footer-col-list-item-link" href="#"
+                  >Blog</a
+                >
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Spring</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Summer</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Autumn</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Winter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="last footer-col">
+            <ul class="footer-col-list">
+              <li class="footer-col-list-item ">
+                <a class="followLinkTop footer-col-list-item-link" href="#"
+                  >Text Styles</a
+                >
+              </li>
+              <li class="footer-col-list-item">
+                <a class=" footer-col-list-item-link" href="#">Spring</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Summer</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Autumn</a>
+              </li>
+              <li class="footer-col-list-item">
+                <a class="footer-col-list-item-link" href="#">Winter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span class="footer-bottom-info">Created by Dashkevych</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- ==SELECTOR== -->
+<!-- <select class="select-css">
+          <option>This is a native select element</option>
+          <option>Apples</option>
+          <option>Bananas</option>
+          <option>Grapes</option>
+          <option>Oranges</option>
+        </select> -->

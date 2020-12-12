@@ -1,0 +1,172 @@
+/* MAIN ------------------------------------------------------------*/
+
+.main {
+  width: 100%;
+}
+/* articleList-----------------------------------------------------------*/
+.newsListTitle {
+  display: block;
+  color: #665d4e;
+  font-family: "Bebas Neue";
+  font-size: 38px;
+  letter-spacing: 4px;
+  margin: 0 auto 12px;
+  width: 670px;
+}
+.articleList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  grid-gap: 20px;
+}
+.article {
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: all 200ms linear;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 46px;
+}
+.article:hover {
+  transform: scale(1.02);
+}
+
+.articleImage {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.48);
+  border: #fff 3px solid;
+  border-radius: 5px;
+  transition: all 200ms linear;
+}
+.articleTitle {
+  color: #665d4e;
+  font-family: "Bebas Neue";
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin: 20px 0 4px;
+}
+.articleSectionInfo {
+  color: #e1820b;
+  font-size: 20px;
+  font-family: "Bebas Neue";
+}
+.articleSectionInfo::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #665d4e;
+  margin-top: 6px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.33);
+}
+.articleText {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 22px 0 10px;
+}
+.tagsContainer {
+  line-height: 1.4;
+}
+.articleTag {
+  padding: 4px 8px;
+  margin: 2px;
+  border-radius: 2px;
+  background-color: #3f51b5;
+  color: #fff;
+  font-size: 10px;
+  display: inline-block;
+}
+
+.articleButton {
+  outline: none;
+  width: 130px;
+  height: 40px;
+  background: linear-gradient(to bottom, #4eb5e5 0%, #389ed5 100%); /* W3C */
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  border-bottom: 4px solid #2b8bc6;
+  color: #fbfbfb;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  font-size: 15px;
+  text-align: left;
+  text-indent: 5px;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: block;
+  transition: all 200ms linear;
+}
+.articleButton:hover {
+  background: linear-gradient(to bottom, #62bce6 0%, #4aa3d3 100%);
+}
+.articleButton:hover .articleButton:after {
+  border-top: 20px solid #0173b9;
+  border-bottom: 20px solid #0173b9;
+  border-right: 20px solid #0173b9;
+}
+.articleButton:active {
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.2);
+  top: 1px;
+}
+.btn-wrapper {
+  margin-top: 12px;
+  align-self: flex-end;
+  align-content: flex-end;
+  position: absolute;
+  bottom: 0;
+}
+.articleButton:after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border-top: 20px solid #187dbc;
+  border-bottom: 20px solid #187dbc;
+  border-left: 16px solid transparent;
+  border-right: 20px solid #187dbc;
+  position: absolute;
+  opacity: 0.6;
+  right: 0;
+  top: 0;
+  border-radius: 0 5px 5px 0;
+}
+.articleLink {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.headArticleLink {
+  text-decoration: none;
+}
+.addToStorageButton {
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: rgba(201, 201, 198, 0.3);
+  padding: 0;
+}
+.addToStorageButtonBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 200ms linear;
+}
+.addToStorageButton:hover {
+  background-color: rgba(201, 201, 198, 0.8);
+}

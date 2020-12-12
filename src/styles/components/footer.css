@@ -1,0 +1,103 @@
+/* FOOTER ------------------------------------------------------------*/
+
+.footer {
+  width: 100%;
+  padding-top: 60px;
+  margin-top: 40px;
+  background: url(../../images/spring/footer-bg.png) repeat-x #777264 top center;
+  position: relative;
+}
+
+.footerLinksInfo {
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #665d4e;
+  font-weight: bold;
+}
+
+.footer-wrapper {
+  position: relative;
+  min-height: 200px;
+  margin: 0 auto;
+  background: url(../../images/bottom-bg.png) no-repeat bottom center;
+}
+
+.follow {
+  display: block;
+  position: absolute;
+  width: 260px;
+  height: 56px;
+  margin: 0 auto;
+  background: url(../../images/follow-bg.png) no-repeat;
+  padding: 0;
+  top: 18px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.followItem {
+  display: block;
+  float: left;
+  margin-left: 17px;
+  margin-top: 10px;
+}
+
+.footer-cols {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-col {
+  width: 238px;
+  margin: 0px 1px;
+  float: left;
+  min-height: 170px;
+  background: url(../../images/footer-separator.png) no-repeat top right;
+}
+
+.footer-col-list {
+  list-style: none;
+  width: 100px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.footer-col-list-item {
+  margin-left: 10px;
+  margin-bottom: 0.1em;
+}
+
+.footer-col-list-item-link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.5em;
+  font-weight: lighter;
+  color: #fbfbfb;
+}
+.followLinkTop {
+  font-family: "Bebas Neue";
+  font-size: 18px;
+  color: #854a02;
+}
+.footer-col-list-item:first-child {
+  margin-bottom: 0.5em;
+}
+
+.footer-col-list-item-link:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-bottom-info {
+  font-family: "Baskervville";
+  font-size: 18px;
+  color: #fff;
+}

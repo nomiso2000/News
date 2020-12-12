@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --env.mode development --env.port 8080",
-    "build": "webpack --env.mode production"
+    "build": "webpack --env.mode production",
+    "predeploy": "npm run build",
+    "deploy": "netlify deploy -p"
   },
   "author": "",
   "license": "ISC",
